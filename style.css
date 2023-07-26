@@ -1,0 +1,324 @@
+:root {
+  --bd-purple: #4c0bce;
+  --bd-gray: #ccc;
+  --bd-dark: #111b21;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* *************************************************** */
+/* ****************** Header Section ***************** */
+/* *************************************************** */
+
+.navbar {
+  height: 85px;
+  background-color: var(--bd-purple);
+  position: sticky;
+  top: 0px;
+  text-align: center;
+  display: block;
+  overflow: hidden;
+  z-index: 20;
+}
+.nav-content {
+  position: relative;
+  display: flex;
+  justify-content: end;
+}
+.nav-content a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 17px;
+  height: 100%;
+}
+.nav-content a:hover {
+  background-color: black;
+}
+/* *************************************************** */
+/* ****************** Home Section ******************* */
+/* *************************************************** */
+.home {
+  margin-bottom: 50px;
+  margin: 20px;
+}
+.home-container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  justify-content: start;
+  align-items: center;
+}
+.img img {
+  width: 80%;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px black;
+}
+
+.info h1 {
+  text-align: start;
+  justify-self: st;
+  align-self: center;
+}
+
+/* *************************************************** */
+/* ****************** hobbies Section **************** */
+/* *************************************************** */
+
+.hobbies-content h1 {
+  text-align: center;
+  font-size: 40px;
+  margin: 20px 0px 20px 0px;
+}
+.hobbies-images {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: center;
+  column-gap: 20px;
+}
+.hobbies-images img {
+  width: 100%;
+  height: 90%;
+  margin: 10px;
+  background-size: cover;
+  border-radius: 10%;
+  transition: all 0.3s;
+  box-shadow: 5px 5px 20px black;
+  overflow: auto;
+}
+.hobbies-images img:hover {
+  transform: scale(1.05);
+  overflow: hidden;
+}
+/* *************************************************** */
+/* ***************** birthday Section **************** */
+/* *************************************************** */
+.birthday {
+  margin-top: 40px;
+}
+.birthday h1 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.birthday-container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: center;
+}
+.birthday-img img {
+  width: 90%;
+  margin-left: 20px;
+  border-radius: 20%;
+  animation: hideMe 10s forwards;
+}
+.birthday-content {
+  justify-items: center;
+  animation: showme 10s forwards;
+  opacity: 0;
+}
+.birthday-content textarea {
+  width: 90%;
+}
+.birthday-content .thank-message {
+  display: none;
+  color: #4c0bce;
+}
+.submit {
+  padding: 10px 20px;
+  color: white;
+  background-color: #4c0bce;
+  cursor: pointer;
+}
+.submit:focus + .thank-message {
+  display: block;
+}
+@keyframes hideMe {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes showme {
+  to {
+    opacity: 1;
+  }
+}
+
+/* *************************************************** */
+/* *************** Contact Us Section **************** */
+/* *************************************************** */
+
+.contactUs {
+  margin-top: 20px;
+}
+.contactUs h1 {
+  text-align: center;
+  font-weight: bold;
+  color: #4c0bce;
+  margin-bottom: 20px;
+}
+
+.contactUs-container {
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.contactUs-container label {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.contactUs-container input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--bd-gray);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type="submit"] {
+  padding: 10px 20px;
+  color: white;
+  background-color: #4c0bce;
+  cursor: pointer;
+}
+
+/* *************************************************** */
+/* *************** Img-Slider Section **************** */
+/* *************************************************** */
+
+/* *************************************************** */
+/* *************** footer(cv) Section **************** */
+/* *************************************************** */
+
+footer {
+  background-color: var(--bd-dark);
+}
+footer .credit {
+  text-align: center;
+  color: white;
+}
+.footer-conatainer {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  column-gap: 10px;
+  position: relative;
+  background-color: var(--bd-dark);
+  color: white;
+}
+.footer-img img {
+  width: 90%;
+  margin-top: 50px;
+  border-radius: 60px 200px;
+}
+.footer-content h1 {
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.footer-content h3 {
+  margin-top: 20px;
+  align-items: center;
+}
+.credit {
+  text-align: center;
+}
+
+/* **************************************************************************/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #712cf9;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 12px;
+  height: 11px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  margin-right: 35px;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877f2;
+  color: #ffffff;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background: #333333;
+  color: #ffffff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background: #0a66c2;
+  color: #ffffff;
+}
