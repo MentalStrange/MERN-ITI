@@ -31,11 +31,14 @@ function createDiv() {
   parentDiv.appendChild(deleteButton);
 
   // ---------------------------------------------------------
-  newCheckBox.addEventListener("change", function () {
+  newCheckBox.addEventListener("click", function () {
     if (newCheckBox.checked) {
+      // document.querySelector(".tasks-to-do").removeChild(parentDiv);
       document.querySelector(".finished-tasks").appendChild(parentDiv);
+      parentDiv.removeChild(deleteButton);
     }
   });
+  console.log(parentDiv.children);
 }
 
 // console.log(document.querySelector(".tasks-to-do").children);

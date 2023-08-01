@@ -19,6 +19,7 @@
   border: 1px solid black;
   height: auto;
   padding: 10px;
+  bottom: 0px;
 }
 .addNewTask {
   margin: 10px 0px 10px 0px;
